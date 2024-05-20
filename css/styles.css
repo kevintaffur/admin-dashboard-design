@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.container .sidebar {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.sidebar .logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.sidebar .sections {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.sections .top-group {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.sections .bottom-group {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.top-group ul {
+  list-style-type: none;
+}
+
+.bottom-group ul {
+  list-style-type: none;
+}
+
+.container .page {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.page .header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.page .content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.content .projects {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.projects .title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.content .inner-sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.inner-sidebar .announcements {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.announcements .title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.announcements .cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.inner-sidebar .trending {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+ 
+.trending .title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.trending .cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
